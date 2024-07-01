@@ -1,0 +1,214 @@
+body {
+  background-color: black;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.main-container {
+  height: 500px;
+  width: 90%;
+  margin: auto;
+}
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.heart-1 {
+  border: 2px solid blue;
+  width: 25%;
+  height: 60px;
+  display: flex;
+}
+.heart-1 img {
+  margin: auto;
+  width: 45px;
+  height: auto;
+}
+.pac-man-container {
+  border: 2px solid blue;
+  width: 42%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 2px;
+}
+.heart-2 {
+  border: 2px solid blue;
+  width: 25%;
+  height: 60px;
+  display: flex;
+}
+.heart-2 img {
+  margin: auto;
+  width: 45px;
+  height: auto;
+}
+.path {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  animation: eating-path 0.5s linear infinite;
+}
+
+.path::before {
+  content: "";
+  background-color: yellow;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+@keyframes eating-path {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.pac-man {
+  position: relative;
+  background: transparent;
+  z-index: 1;
+}
+
+.pac-man::before,
+.pac-man::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  display: block;
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+}
+
+.pac-man::before {
+  animation: eat 0.5s ease infinite;
+  border: 15px solid yellow;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+@keyframes eat {
+  0%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+}
+
+.pac-man::after {
+  animation: eat-bottom 0.5s ease infinite;
+  border: 15px solid yellow;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+@keyframes eat-bottom {
+  0%,
+  100% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.main-row{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 2px solid blue;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title {
+  color:#FF75ED;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 5px;
+}
+
+#title p{
+  text-align: center;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  font-style: normal;
+  color: yellow;
+  background-color: blue;
+  height: 2rem;
+  width: 6rem;
+}
+.row-2{
+  display: flex;
+  align-items: center;
+}
+.row-2 img {
+    margin: auto;
+    width: 45px;
+    height: auto;
+  }
+  .path2 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+  }
+  
+  .path2::before {
+    content: "";
+    background-color: yellow;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+  .row-3{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+  }
+  .empty-row{
+    width: 40%;
+    height: 20px;
+    border: 2px solid blue;
+  }
+  .path-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    height: 6vh;
+    width: 10%;
+  }
+  
+  .path3 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 3vh;
+  }
+  .path3::before {
+    content: "";
+    background-color: yellow;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
