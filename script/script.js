@@ -26,11 +26,13 @@ var x = setInterval(function () {
 
 function revealLocation() {
   var now = new Date().getTime();
-  if (countDownDate >= now) {
+  if (countDownDate <= now) {
     document.getElementById("locationScreen").style.display = "block";
     document.querySelectorAll(".screen").forEach((screen) => {
       screen.style.display = "none";
     });
+  } else {
+    alert("Impatient much? 😒")
   }
 }
 
