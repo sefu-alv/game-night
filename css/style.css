@@ -212,3 +212,42 @@ button{
     width: 5px;
     border-radius: 50%;
   }
+  .screen {
+    display: none; 
+}
+
+.gameScreen_container p {
+  color:#FF75ED;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 15px;
+}
+#where button{
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  font-style: normal;
+  color: yellow;
+  background-color: blue;
+  height: 2rem;
+  width: 8rem;
+  line-height:13px ;
+}
+
+.location p {
+  color:#FF75ED;
+  font-family: "Press Start 2P", system-ui;
+  font-size: .70rem;
+  font-style: normal;
+  line-height: 15px;
+  text-align: center;
+}
+
+#whatToBring p{
+  color:#FF75ED;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 5px;
+  
+}

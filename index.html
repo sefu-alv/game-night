@@ -33,16 +33,37 @@
           </div>
         </div>
         <div class="main-row">
-          <div id="menu">
+          <div id="menuScreen" class="screen">
             <div id="title">
               <p>GAME</p>
               <p>NIGHT</p>
             </div>
             <div class="button-container">
-              <button>START!</button>
+              <button onclick="switchScreen('gameScreen')">START!</button>
             </div>
           </div>
-          <div id="gameScreen"></div>
+          <div id="gameScreen" class="screen" style="display: none">
+            <div class="gameScreen_container">
+              <p id="when">Date: July 2 @ 5pm</p>
+              <p id="where">
+                Location:
+                <button onclick="revealLocation()">
+                  Click me in
+                  <div id="countdown"></div>
+                </button>
+              </p>
+              <p id="whatToBring">What to bring:</p>
+              <p class="list">Games</p>
+              <p class="list">Snacks & drinks</p>
+              <p class="list">Good vibes</p>
+            </div>
+          </div>
+          <div class="location" id="locationScreen" style="display: none">
+            <p></p>
+            <button id="backToMenuButton" onclick="switchScreen('menuScreen')">
+              Back to Menu
+            </button>
+          </div>
         </div>
         <div class="row-2">
           <img src="./images/pinkHeart.svg" alt="" />
@@ -73,4 +94,5 @@
       </div>
     </div>
   </body>
+  <script src="./script/script.js"></script>
 </html>
