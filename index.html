@@ -44,7 +44,7 @@
           </div>
           <div id="gameScreen" class="screen" style="display: none">
             <div class="gameScreen_container">
-              <p id="when">Date: July 2 @ 5pm</p>
+              <p id="when">Date: July 2 @ 3pm</p>
               <p id="where">
                 Location:
                 <button onclick="revealLocation()">
@@ -53,12 +53,22 @@
                 </button>
               </p>
               <p id="whatToBring">What to bring:</p>
+              <ul>
+                <li class="list">Games</li>
+                <li class="list">Snacks & drinks</li>
+                <li class="list">Good vibes</li>
+              </ul>
+              <div class="button-container" >
+                <button onclick="switchScreen('menuScreen')">BACK</button>
+              </div>
+              <!-- <p id="whatToBring">What to bring:</p>
               <p class="list">Games</p>
               <p class="list">Snacks & drinks</p>
-              <p class="list">Good vibes</p>
+              <p class="list">Good vibes</p> -->
             </div>
           </div>
           <div class="location" id="locationScreen" style="display: none">
+            <!-- Adress will go here -->
             <p></p>
             <button id="backToMenuButton" onclick="switchScreen('menuScreen')">
               Back to Menu
