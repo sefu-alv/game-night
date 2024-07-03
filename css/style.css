@@ -84,6 +84,7 @@ body {
   content: "";
   position: absolute;
   top: -15px;
+  left: -2px;
   display: block;
   border-radius: 50%;
   height: 0;
@@ -125,7 +126,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 1rem;
     border: 2px solid blue;
-    height: 30vh;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,4 +251,11 @@ button{
   font-style: normal;
   line-height: 5px;
   
+}
+
+@media only screen and (max-width: 360px) {
+  .row-2 img {
+    width: 25px;
+    height: auto;
+  }
 }
